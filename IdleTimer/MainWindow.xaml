@@ -1,0 +1,21 @@
+﻿<Window x:Class="IdleTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IdleTimer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="#FFDEFFF9" MouseRightButtonDown="Grid_MouseDown" >
+        <Label x:Name="timerText" Content="00:00:00" HorizontalAlignment="Center" Margin="108,30,109,0" VerticalAlignment="Top" Height="108" Width="300" FontFamily="Open Sans" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" MouseDoubleClick="timerText_MouseDoubleClick"/>
+
+        <TextBox x:Name="mText" Visibility="Hidden" HorizontalAlignment="Center" Height="108" Margin="215,30,214,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" FontFamily="Open Sans" FontSize="66" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="hText" Visibility="Hidden" HorizontalAlignment="Center" Height="108" Margin="116,30,321,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" FontFamily="Open Sans" FontSize="66" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="sText" Visibility="Hidden" HorizontalAlignment="Center" Height="108" Margin="319,30,118,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" FontFamily="Open Sans" FontSize="66" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+
+        <Button x:Name="breakButton" Content="Break" HorizontalAlignment="Center" Margin="0,209,0,0" VerticalAlignment="Top" Width="116" Height="57" Click="breakButton_Click"/>
+
+        <Label x:Name="messageLabel" Content="Work" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,155,0,0" FontSize="20" FontWeight="Bold" Width="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
